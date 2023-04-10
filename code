@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int* buyuk(int* x, int* y)
+{
+	if(*x>*y)
+	return x;
+	else
+	return y;
+}
+int main()
+{ 
+       int a,b;
+	   int *p;
+	   cout << "iki Deger Giriniz : ";
+	   cin >> a >> b;
+	   
+	  p= buyuk(&a,&b);
+	  
+	  cout << "Girdiginiz sayilardan buyuk olan = " << *p << endl;
+
+	system("pause");
+	return 0;
+}
